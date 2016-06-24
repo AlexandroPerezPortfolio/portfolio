@@ -10,7 +10,7 @@ body {
 }
 
 .nav-container {
-  background-color: #efe6b2;
+  background-color: #efedde;
   /*background-color: rgb(70, 80, 102); /**/
   margin-bottom: 15px;
 
@@ -37,10 +37,10 @@ body {
 /* { Logo  */
 .logo {
   /*visibility: hidden; /* */
-  width: 216px;
+  width: 256px;
   margin: 8px;
-  background: url("face.png") no-repeat left center;
-  background-size: 50px;
+  background: url("logo.png") no-repeat left center;
+  background-size: 100px;/**/
   display: inline-block;
   font-family:Dosis, sans-serif, serif;
   padding: 5px 0 9px 10px;
