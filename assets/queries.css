@@ -1,0 +1,31 @@
+@media only screen and (max-width: 1024px) {
+  .maincontainer {
+    width: 100%;
+    min-width: 0;
+  }
+  .section {
+
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .logo {
+    margin: 8px;
+    background-size: 50px;
+    width: calc(270px * .8);
+  }
+
+  .text .name {
+    font-size: calc(2em * .8);
+  }
+  .text .desc {
+    font-size: calc(1.33em * .8);
+  }
+  .section {
+
+  }
+}
+
+@media only screen and (max-width: 480px){
+
+}

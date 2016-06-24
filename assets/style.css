@@ -1,0 +1,91 @@
+body {
+  font-size: 16px;
+  background-color: #eee;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-container {
+  background-color: #efe6b2;
+  /*background-color: rgb(70, 80, 102); /**/
+  margin-bottom: 15px;
+
+}
+
+.nav-border-bottom {
+  margin-bottom: 0px;
+  border-bottom: solid rgb(48,26,13) 15px;
+}
+
+.nav-scrollable {
+  /*This makes the container stick to the bottom of the header
+    which in turn makes it possible to hide the navigation in
+    mobile devices */
+  position: absolute;
+  bottom: 0px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+/* { Logo  */
+.logo {
+  /*visibility: hidden; /* */
+  width: 216px;
+  margin: 8px;
+  background: url("face.png") no-repeat left center;
+  background-size: 50px;
+  display: inline-block;
+  font-family:Dosis, sans-serif, serif;
+  padding: 5px 0 9px 10px;
+}
+.text {
+  display: inline-block;
+  float: right;
+}
+.text .name {
+  display: block;
+  font-size: 1.65em;
+  color: #a1284a;
+}
+.text .highlight {
+  display: block;
+  height: 3px;
+  background-color: #a1284a;
+  text-indent: -9999px;
+  margin-bottom: 0px;
+}
+.text .desc {
+  display: block;
+  text-align: center;
+  font-size: 1.06em;
+  border-bottom: solid 0px #f77;
+}
+/* logo }*/
+
+
+header {
+  background-image: url(header.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.maincontainer {
+  /*background-color: lightgray;*/
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 960px;
+}
+
+.section {
+  font-size: 1.5em;
+}
