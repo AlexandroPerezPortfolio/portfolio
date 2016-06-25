@@ -22,17 +22,6 @@ $(window).resize(function() {
 });
 
 
-
-
-// display a border right before the maincontainer hits the toop of the
-// navigation. Also, if small device (<= 800px) allow for navigation to hidden
-// when scrolling down.
-var waypoints = $('.maincontainer').waypoint(function(direction) {
-  $('.nav-container').toggleClass('nav-border-bottom');
-}, {
-  offset: 104
-});
-
 var waypoints = $('.maincontainer').waypoint(function(direction) {
   if (menuFixed && direction == "up"){
     mobileMenuFeature = false;

@@ -9,23 +9,23 @@
 }
 
 @media only screen and (max-width: 800px){
-  .logo {
-    margin: 8px;
-    background-size: 50px;
-    width: calc(270px * .8);
-  }
 
-  .text .name {
-    font-size: calc(2em * .8);
-  }
-  .text .desc {
-    font-size: calc(1.33em * .8);
-  }
   .section {
 
   }
 }
 
 @media only screen and (max-width: 480px){
+  .logo {
+    background-size: 80px;
+    width: 204px;
+    padding: 7px 0 10px 88px;
+  }
 
+  .text .name {
+    font-size: 1.48em;
+  }
+  .text .desc {
+    font-size: .95em;
+  }
 }

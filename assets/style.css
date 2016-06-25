@@ -7,26 +7,18 @@ body {
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 0;
+  margin: 0;
 }
 
 .nav-container {
   background-color: #efedde;
   /*background-color: rgb(70, 80, 102); /**/
-  margin-bottom: 15px;
-
+  border-bottom: solid #be946e 15px;
 }
 
 .nav-border-bottom {
-  margin-bottom: 0px;
-  border-bottom: solid rgb(48,26,13) 15px;
-}
 
-.nav-scrollable {
-  /*This makes the container stick to the bottom of the header
-    which in turn makes it possible to hide the navigation in
-    mobile devices */
-  position: absolute;
-  bottom: 0px;
 }
 
 .hidden {
@@ -34,20 +26,19 @@ body {
 }
 
 
-/* { Logo  */
+/* Logo  */
 .logo {
   /*visibility: hidden; /* */
   width: 256px;
-  margin: 8px;
-  background: url("logo.png") no-repeat left center;
+  background: url("logo.png") no-repeat left bottom;
   background-size: 100px;/**/
   display: inline-block;
   font-family:Dosis, sans-serif, serif;
-  padding: 5px 0 9px 10px;
+  padding: 9px 0 13px 110px;
 }
 .text {
   display: inline-block;
-  float: right;
+  /*float: right;/**/
 }
 .text .name {
   display: block;
@@ -67,14 +58,14 @@ body {
   font-size: 1.06em;
   border-bottom: solid 0px #f77;
 }
-/* logo }*/
+
 
 
 header {
   background-image: url(header.jpg);
   background-size: cover;
   background-position: center top;
-  background-attachment: fixed;
+  /*background-attachment: fixed; /**/
   height: 100vh;
 }
 
