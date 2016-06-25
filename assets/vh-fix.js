@@ -1,12 +1,13 @@
-// fix for vh sizes in android devices (where if the browswer hides the top bar
-// makes the header increase its viewport size and makes the site jumpy)
+// fix for vh unit sizes in mobile devices (where if the browswer hides or
+// resizes the top bar it makes the header increase its viewport size and makes
+// the site jumpy)
 
 var ua = navigator.userAgent.toLowerCase();
-var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-if(isAndroid) {
-  var height = $(window).height() + 60;
-  console.log ('document height = :', height);
+var android = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+var iPhone = ua.indexOf("iphone") > -1; //&& ua.indexOf("mobile");
+var iPad = ua.indexOf("ipad") > -1; //&& ua.indexOf("mobile");
+if(android || iPhone || iPad) {
+  var height = $(window).height();
   height = height.toString() + "px";
-
-  $('.vh-fix').css("height", height);
+  $('header').css("height", height);
 }

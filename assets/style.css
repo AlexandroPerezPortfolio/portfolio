@@ -6,7 +6,6 @@ body {
 .nav {
   position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 0;
   margin: 0;
 }
@@ -17,9 +16,6 @@ body {
   border-bottom: solid #be946e 15px;
 }
 
-.nav-border-bottom {
-
-}
 
 .hidden {
   visibility: hidden;
