@@ -14,10 +14,8 @@ var inContainer = false;
 $(window).resize(function() {
   if ($(document).width() <= 800 && inContainer) {
     mobileMenuFeature = true;
-    console.log("document less than 800");
   } else if ($(document).width() > 800 && inContainer) {
     requestMobileMenuFeatureOff = true;
-    console.log("document more than 800");
   }
 });
 
