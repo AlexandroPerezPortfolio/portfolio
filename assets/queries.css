@@ -29,3 +29,15 @@
     font-size: .95em;
   }
 }
+
+@media only screen and (orientation: portrait){
+  header {
+    background-image: url('landing-page-cover-landscape-medium.jpg');
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 480px) {
+  header {
+    background-image: url('landing-page-cover-landscape-small.jpg');
+  }
+}
