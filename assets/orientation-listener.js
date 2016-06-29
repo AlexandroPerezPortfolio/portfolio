@@ -39,6 +39,7 @@ var Device = function() {
   window.addEventListener("resize", function(){
     device.updateState();
   });
+  onOrientationChange();
 };
 
 // Useful functions
