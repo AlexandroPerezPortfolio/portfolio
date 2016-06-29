@@ -66,4 +66,5 @@ device.addOrientationChangeListener(function() {
     height = height.toString() + "px";
   }
   $("header").css("height", height);
+  $("a").text(device.barHeight.toString());
 });
