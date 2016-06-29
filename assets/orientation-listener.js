@@ -8,12 +8,10 @@
 
 var Device = function() {
   // public properties
-  this.width = screen.width;
-  this.height = screen.height;
-  this.barHeight = this.height - window.innerHeight;
+  this.barHeight = screen.height - window.innerHeight;
 
   // private variables
-  var orientation = getOrientation(this.width, this.height); // "landscape" or "portrait"
+  var orientation = getOrientation(screen.width, screen.height); // "landscape" or "portrait"
   var onOrientationChangeFunction = function(){}; // function to execute when orientation changes
 
   // privileged methods
@@ -26,10 +24,8 @@ var Device = function() {
   };
 
   this.updateState = function() {
-    this.width = screen.width;
-    this.height = screen.height;
-    if (orientation !== getOrientation(this.width, this.height)) {
-      orientation = getOrientation(this.width, this.height);
+    if (orientation !== getOrientation(screen.width, screen.height)) {
+      orientation = getOrientation(screen.width, screen.height);
       onOrientationChange(onOrientationChangeFunction);
     }
   };
@@ -40,7 +36,7 @@ var Device = function() {
   }
 
   // construcor code (always executes at instantiation)
-  $(window).resize(function(){
+  window.addEventListener("resize", function(){
     device.updateState();
   });
 };
@@ -66,8 +62,8 @@ var device = new Device();
 device.addOrientationChangeListener(function() {
   var height = "100vh";
   if (isMobileDevice()) {
-    console.log(++counter, "is mobile deviced and changed orientation");
-    height =  (device.height - device.barHight).toString() + "px";;
+    height = screen.height - device.barHeight;
+    height = height.toString() + "px";
   }
   $("header").css("height", height);
 });
