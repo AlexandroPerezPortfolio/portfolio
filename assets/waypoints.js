@@ -9,12 +9,12 @@ var mobileMenuFeature = false;
 var requestMobileMenuFeatureOff = false;
 
 var inContainer = false;
-
+var maxWidth = 800;
 
 $(window).resize(function() {
-  if ($(document).width() <= 800 && inContainer) {
+  if ($(document).width() <= maxWidth && inContainer) {
     mobileMenuFeature = true;
-  } else if ($(document).width() > 800 && inContainer) {
+  } else if ($(document).width() > maxWidth && inContainer) {
     requestMobileMenuFeatureOff = true;
   }
 });
@@ -29,7 +29,7 @@ var waypoints = $('.maincontainer').waypoint(function(direction) {
 
 
 var waypoints = $('.maincontainer').waypoint(function(direction) {
-  if (menuFixed && $(document).width() <= 800 && direction == "down") {
+  if (menuFixed && $(document).width() <= maxWidth && direction == "down") {
     menuFixed = false;
     mobileMenuFeature = true;
     $('.nav-container').addClass('slideOutUp');

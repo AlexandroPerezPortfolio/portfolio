@@ -1,0 +1,188 @@
+/* { .nav default styles (non-mobile & < 960) */
+.anchor {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 66px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  display: block;
+  height: 60px;
+  width: 100%;
+  font-family: Dosis, sans-serif, serif;
+  background-color: #737676;
+  color: #dadada;
+  text-shadow: 3px 3px 3px rgba(0,0,0, .4);
+  border-bottom: solid 6px #286688;
+  border-bottom: solid 6px #cc6600;
+  box-shadow: 0 4px 8px 2px #404343;
+}
+.nav > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: url("../logo.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-position: 10px 100%;
+  background-size: 80px;
+}
+.nav div h1 {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 0 0 85px;
+  padding: 0 20px 0 20px;
+}
+.nav div ul {
+  display: block;
+  float: right;
+  margin: 0 20px 0 0;
+  padding: 0;
+  height: 60px;
+  list-style: none;
+}
+.nav div ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  width: 100px;
+  text-align: center;
+  font-size: 1.3em;
+}
+.nav div ul li.social {
+  width: 60px;
+}
+.nav div ul li a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  line-height: 60px;
+  vertical-align: middle;
+}
+.nav div ul li a:link,
+.nav div ul li a:hover,
+.nav div ul li a:visited,
+.nav div ul li a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.nav div ul li a:hover {
+  background-color: aqua;
+}
+.nav div ul li a span:not(:first-child)::before {
+    content: " ";
+  }
+#menu {
+  display: none;
+}
+/*}*/
+
+
+/* Media Queries */
+@media only screen and (max-width: 959px) {
+  /* {.nav general styles */
+  .nav div {
+    text-align: center;
+  }
+  .nav div h1 {
+    margin: 0;
+    padding: 0;
+  }
+  #menu {
+    display: block;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 60px;
+    width: 50px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 3em;
+    margin: 0 10px 0 0;
+  }
+  #menu-links {
+    display: none;
+  }
+  .nav div ul {
+    float: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 66px;
+    height: 100%;
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+    background-color: rgba(5,5,5, .8)
+  }
+  .nav div ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+    height: 50px;
+    width: calc(50% - 10px);
+    text-align: center;
+    font-size: 1.3em;
+
+  }
+  .nav div ul li.social {
+    height: 50px;
+    width: calc(50% - 10px);
+  }
+  .nav div ul li a {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 50px;
+    vertical-align: middle;
+    background-color: #737676;
+  }
+  .nav div ul li a:link,
+  .nav div ul li a:hover,
+  .nav div ul li a:visited,
+  .nav div ul li a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+  .nav div ul li a:hover {
+    background-color: aqua;
+  }
+  /*}*/
+}
+
+
+@media screen and (max-width: 434px), screen and (orientation: landscape) and (max-height: 434px) {
+
+  .nav div ul {
+    top: 56px;
+  }
+
+  #menu {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 2.5em;
+    margin: 0 8px 0 0;
+  }
+  .nav {
+    height: 50px;
+  }
+  .nav > div {
+    background-position: -10px 100%;
+    background-size: 70px;
+  }
+  .nav div h1 {
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.8em;
+  }
+}

@@ -3,70 +3,45 @@ body {
   background-color: #eee;
 }
 
-.nav {
-  position: fixed;
+.slogan {
   width: 100%;
-  padding: 0;
-  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Dosis, sans-serif, serif;
+  font-size: 3em;
+  text-align: center;
+  color: #dadada;
+  text-shadow: 3px 3px 3px rgba(0,0,0, .4);
 }
-
-.nav-container {
-  background-color: #efedde;
-  /*background-color: rgb(70, 80, 102); /**/
-  border-bottom: solid #be946e 15px;
-}
-
 
 .hidden {
   visibility: hidden;
 }
 
 
-/* Logo  */
-.logo {
-  /*visibility: hidden; /* */
-  width: 256px;
-  background: url("logo.png") no-repeat left bottom;
-  background-size: 100px;/**/
-  display: inline-block;
-  font-family:Dosis, sans-serif, serif;
-  padding: 9px 0 13px 110px;
-}
-.text {
-  display: inline-block;
-  /*float: right;/**/
-}
-.text .name {
-  display: block;
-  font-size: 1.65em;
-  color: #a1284a;
-}
-.text .highlight {
-  display: block;
-  height: 3px;
-  background-color: #a1284a;
-  text-indent: -9999px;
-  margin-bottom: 0px;
-}
-.text .desc {
-  display: block;
-  text-align: center;
-  font-size: 1.06em;
-  border-bottom: solid 0px #f77;
-}
-
 
 
 header {
+  background-position: center top;
+  height: 100vh;
   background-image: url(landing-page-cover.jpg);
   background-size: cover;
-  background-position: center top;
-  /*background-attachment: fixed; /**/
-  height: 100vh;
+}
+
+header > div {
+  height: 100%;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#404343+0,404343+100&0+0,0.64+16,0.82+34,0.95+69,1+100 */
+  background: -moz-linear-gradient(left,  rgba(64,67,67,0) 0%, rgba(64,67,67,0.64) 16%, rgba(64,67,67,0.82) 34%, rgba(64,67,67,0.95) 69%, rgba(64,67,67,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(64,67,67,0) 0%,rgba(64,67,67,0.64) 16%,rgba(64,67,67,0.82) 34%,rgba(64,67,67,0.95) 69%,rgba(64,67,67,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(64,67,67,0) 0%,rgba(64,67,67,0.64) 16%,rgba(64,67,67,0.82) 34%,rgba(64,67,67,0.95) 69%,rgba(64,67,67,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00404343', endColorstr='#404343',GradientType=1 ); /* IE6-9 */
+
 }
 
 .maincontainer {
-  /*background-color: lightgray;*/
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
