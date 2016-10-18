@@ -1,59 +1,58 @@
 /* Customized Responsive Grid System           */
 /* Source: http://www.responsivegridsystem.com/ */
 
+/* Example of layout
 
-/*  SECTIONS  ============================================================================= */
-.section {
+Web layouts
+.wrapper
+   .headcontainer (for header)
+      <header>
+   .maincontainer (for all other content)
+      -[type]container (i.e. lightcontainer, darkcontainer, aboutcontainer, etc)
+
+*/
+
+
+.grid {
   clear: both;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
-
-
-/*  GROUPING  ============================================================================= */
-.group:before,
-.group:after {
+.grid:before,
+.grid:after {
   content:"";
   display:table;
 }
-.group:after {
+.grid:after {
   clear:both;
 }
-.group {
-  zoom:1; /* For IE 6/7 (trigger hasLayout) */
-}
-
-
-/*  GRID COLUMN SETUP   ==================================================================== */
+/*  GRID COLUMN SETUP ============== */
 .col {
   display: block;
   float:left;
-  margin: 1% 0 1% 1.6%;
+  margin: 0 0 1.6% 1.6%;
 }
-.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+/*  GRID OF FOUR   ================= */
+.grid_of_4 > .cell {
+  width: 23.8%;
+}
+@media only screen and (min-width: 1367px) {
+  .grid_of_4 > .col:nth-child(4n+1) { margin-left: 0; clear: left;}
+}
+/*  GRID OF FOUR CHANGES TO GRID OF THREE AT LESS THAN 1024px */
+@media only screen and (min-width: 1025px) and (max-width: 1366px)  {
+  .grid_of_4 > .cell { width: 32.26%;}
+  .grid_of_4 > .col:nth-child(3n+1) { margin-left: 0; clear: left;}
+}
+/*  GRID OF FOUR CHANGES TO GRID OF TWO AT 480 PIXELS OR LESS */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .grid_of_4 > .col:nth-child(2n+1) { margin-left: 0; clear: left; }
+  .grid_of_4 > .cell { width: 49.2%; }
+}
 
-
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+/*  GRID OF FOUR CHANGES TO GRID OF TWO AT 480 PIXELS OR LESS */
 @media only screen and (max-width: 480px) {
-  .col {
-    margin: 1% 0 1% 0%;
-  }
-}
-
-
-/*  GRID OF TWO   ============================================================================= */
-.span_2_of_2 {
-  width: 100%;
-}
-.span_1_of_2 {
-  width: 49.2%;
-}
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-@media only screen and (max-width: 480px) {
-  .span_2_of_2 {
-    width: 100%;
-  }
-  .span_1_of_2 {
-    width: 100%;
-  }
+  .grid_of_4 > .col { margin-left: 0; margin-bottom: 1em; clear: left; }
+  .grid_of_4 > .cell { width: 100%; }
 }

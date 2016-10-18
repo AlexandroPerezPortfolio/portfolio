@@ -1,3 +1,13 @@
+/* Doccumentation:
+
+   Navigation bar height
+
+     Default 66px total (60px height + 6px border)
+     Mobile: 56px total (50px height + 6px border)
+
+   */
+
+
 /* { .nav default styles (non-mobile & < 960) */
 .anchor {
   height: 1px;
@@ -18,9 +28,11 @@
   border-bottom: solid 6px #286688;
   border-bottom: solid 6px #cc6600;
   box-shadow: 0 4px 8px 2px #404343;
+  z-index: 999;
 }
 .nav > div {
   max-width: 1200px;
+  height: 60px;
   margin: 0 auto;
   background-image: url("../logo.png");
   background-repeat: no-repeat;
@@ -28,12 +40,29 @@
   background-position: 10px 100%;
   background-size: 80px;
 }
-.nav div h1 {
+.title {
   display: inline-block;
+  overflow: hidden;
   height: 60px;
   line-height: 60px;
-  margin: 0 0 0 85px;
+  margin: 0;
+  padding: 0;
+}
+.title h1 {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  margin: 3px 0 -5px 85px;
   padding: 0 20px 0 20px;
+  font-size: 2em;
+}
+.title p {
+  display: block;
+  height: 15px;
+  line-height: 20px;
+  margin: -5px 0 5px 85px;
+  padding: 0 20px 0 20px;
+  font-size: 1em;
 }
 .nav div ul {
   display: block;
@@ -88,9 +117,10 @@
   .nav div {
     text-align: center;
   }
-  .nav div h1 {
-    margin: 0;
-    padding: 0;
+  .title h1,
+  .title p {
+    margin-left: 0;
+    padding: 0 7px;
   }
   #menu {
     display: block;
@@ -159,7 +189,8 @@
   /*}*/
 }
 
-
+/* I have no idea why I came up with the number 434px, but it seems small devices
+   tend to range from 320px and 414px (iBrokenphone) in width... so this covers them... */
 @media screen and (max-width: 434px), screen and (orientation: landscape) and (max-height: 434px) {
 
   .nav div ul {
@@ -173,16 +204,28 @@
     font-size: 2.5em;
     margin: 0 8px 0 0;
   }
-  .nav {
+  .nav, .nav > div {
     height: 50px;
   }
   .nav > div {
     background-position: -10px 100%;
     background-size: 70px;
   }
-  .nav div h1 {
+  .title {
     height: 50px;
     line-height: 50px;
-    font-size: 1.8em;
   }
+  .title h1 {
+    height: 33px;
+    line-height: 33px;
+    margin-bottom: -3px;
+    font-size: 1.5em;
+  }
+  .title p {
+    height: 12px;
+    line-height: 12px;
+    margin-top: -3px;
+    font-size: .8em;
+  }
+
 }

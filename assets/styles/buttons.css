@@ -1,0 +1,73 @@
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: .7em;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn-lg {
+  padding: 10px 58px;
+  font-size: .8em;
+  line-height: 1.25em;
+  border-radius: 6px;
+}
+
+.btn-outline {
+  color: #dadada;
+  background-color: transparent;
+  border-color: #dadada;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default:hover {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-default:active {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-default:active:hover {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+
+.landing-action {
+  padding: 4px 58px;
+  background-color: #CC6600;
+  background-color: #3c3f43;
+  color: #dadada;
+  text-shadow: none;
+  border-width: 3px;
+  border-color: #dadada;
+
+}
+
+.btn-long {
+  display: block;
+}

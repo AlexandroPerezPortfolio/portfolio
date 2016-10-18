@@ -1,6 +1,7 @@
 /* isMobile.js v0.1 */
 
-/*  Script to check if current device is mobile */
+/*  Script to check if current device is mobile
+    isMobileDevice is either TRUE or FALSE   */
 
 var isMobileDevice = function() {
   var ua = navigator.userAgent.toLowerCase();

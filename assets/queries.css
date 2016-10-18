@@ -4,17 +4,51 @@
     min-width: 0;
   }
   .section {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    padding: 1em .75em 2em;
+  }
 
+}
+
+/* SMALL DEVICES Making sure they are detected even in landscape (which gives them a greater width) */
+@media screen and (max-width: 434px), screen and (orientation: landscape) and (max-height: 434px) {
+  .maincontainer {
+    font-size: 1em;
+  }
+  #more-button {
+    bottom: 0px;
+    font-size: 2.5em;
+  }
+  .slogan {
+    font-size: 2.5em;
+  }
+
+  .min-full-screen-height {
+    min-height: calc(100vh - 56px);
+  }
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    background-image: url("photo_small.jpg");
+  }
+
+  .skills li img {
+    display: block;
+    width: 70px;
   }
 }
 
-@media screen and (max-width: 359px), screen and (orientation: landscape) and (max-height: 359px) {
-  .slogan {
-    font-size: 2.5em;
+/* SMALL DEVICES IN LANDSCAPE MODE */
+@media screen and (orientation: landscape) and (max-height: 434px) {
+  #more-button {
+    font-size: 1.5em;
   }
 }
 
 @media only screen and (orientation: portrait){
+
   header {
     /*background-image: url('landing-page-cover-landscape-medium.jpg');*/
     background-position: left center;
