@@ -23,6 +23,6 @@ function enableProjectDescAnimations() {
     if ($(e.target).parents(".project-thumb").length == 0) {
       $(".project-desc").removeClass('show');
       $(".project-thumb > img").removeClass("dim");
-    }    
+    }
   });
 }
