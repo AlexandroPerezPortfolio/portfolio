@@ -7,5 +7,14 @@
 }
 
 .dark-container {
-  background-color: #7f827c;
+  background-color: #546277;
+  color: #dadada;
+}
+
+.dark-font {
+  color: #3a4040;
+}
+
+.light-font {
+  color: #dadada;
 }
