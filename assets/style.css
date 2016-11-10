@@ -183,6 +183,7 @@ background-image: url("https://www.transparenttextures.com/patterns/black-linen.
   background-color: #fff;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 .project:hover {
   box-shadow: 8px 8px 15px #866952;
@@ -203,16 +204,22 @@ background-image: url("https://www.transparenttextures.com/patterns/black-linen.
   width: 100%;
   margin: 0;
   padding: 0;
+  transition: margin 0.4s ease-in-out;
+  -webkit-transition: margin 0.4s ease-in-out;
+  -moz-transition: margin 0.4s ease-in-out;
 }
 .project-thumb img:hover {
-  opacity: .7;
+
+  /*transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;*/
 }
 
 .project-desc > h3 {
   margin: 0;
   padding: .3em 1em;
   text-align: center;
-  background-color: #4c525a;
+  background-color: #c60;
   color: white;
   font-weight: normal;
   font-size: 1em;
@@ -228,7 +235,7 @@ background-image: url("https://www.transparenttextures.com/patterns/black-linen.
 
 .project-section > .content {
   margin-left: 30px;
-  font-size: .7em;
+  font-size: 16px;
 }
 .project-section > .content > p {
   margin: 0;
@@ -323,7 +330,9 @@ background-image: url("https://www.transparenttextures.com/patterns/black-linen.
 
 
 
-
+.dim {
+  opacity: .3;
+}
 
 
 

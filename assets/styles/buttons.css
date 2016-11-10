@@ -78,4 +78,8 @@ a:link, a:visited, a:hover, a:active {
   border-left: none;
   border-right: none;
   border-radius: 0;
+  background-color: #e6e6e6;
+}
+.btn-card:hover {
+  background-color: #d0d0d0;
 }
