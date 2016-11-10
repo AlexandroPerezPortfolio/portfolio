@@ -71,3 +71,11 @@ a:link, a:visited, a:hover, a:active {
 .btn-long {
   display: block;
 }
+
+.btn-card {
+  display: block;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}

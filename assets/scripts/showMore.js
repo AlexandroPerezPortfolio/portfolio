@@ -13,5 +13,6 @@ function enableProjectDescAnimations() {
   project.click(function() {
     $(this).siblings().find(".project-desc").removeClass("show");
     $(this).find(".project-desc").toggleClass('show');
+    
   });
 }

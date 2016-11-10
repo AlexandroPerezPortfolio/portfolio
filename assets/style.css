@@ -179,9 +179,13 @@ background-image: url("https://www.transparenttextures.com/patterns/black-linen.
 .project {
   box-shadow: 4px 4px 15px #999;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
 }
 .project:hover {
-  cursor: pointer;
+  box-shadow: 8px 8px 15px #866952;
 }
 
 
@@ -190,6 +194,7 @@ background-image: url("https://www.transparenttextures.com/patterns/black-linen.
   display: block;
   width: 100%;
   height: 100%;
+  background-color: black;
 }
 
 .project-thumb img {
@@ -199,31 +204,55 @@ background-image: url("https://www.transparenttextures.com/patterns/black-linen.
   margin: 0;
   padding: 0;
 }
+.project-thumb img:hover {
+  opacity: .7;
+}
+
+.project-desc > h3 {
+  margin: 0;
+  padding: .3em 1em;
+  text-align: center;
+  background-color: #4c525a;
+  color: white;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.project-section {
+  padding: .5em;
+}
+
+.project-section > .icon {
+  float: left;
+}
+
+.project-section > .content {
+  margin-left: 30px;
+  font-size: .7em;
+}
+.project-section > .content > p {
+  margin: 0;
+}
+
 
 /* Animations for Projects ****************************************************/
 .project-desc {
   position: absolute;
-  bottom: 0;
+  bottom: -100%;
   left: 0;
   right: 0;
   overflow: hidden;
-  color: white;
-  background-color: rgba(34, 28, 28, 0.8);
-  padding: 0 1em;
-  transition: top 0.5s ease-in-out;
-  -webkit-transition: top 0.5s ease-in-out;
-  -moz-transition: top 0.5s ease-in-out;
-  top: 100%;
-
-  text-align: center;
-  display: flex;
-  align-items: center;
+  background-color: white;
+  transition: bottom 0.5s ease-in-out;
+  -webkit-transition: bottom 0.5s ease-in-out;
+  -moz-transition: bottom 0.5s ease-in-out;
 }
 .show {
-  top: 0px;
-  transition: top 0.3s ease-in-out;
-  -webkit-transition: top 0.3s ease-in-out;
-  -moz-transition: top 0.3s ease-in-out;
+  /*top: 0;*/
+  bottom: 0;
+  transition: bottom 0.3s ease-in-out;
+  -webkit-transition: bottom 0.3s ease-in-out;
+  -moz-transition: bottom 0.3s ease-in-out;
 }
 /**************************************************** Animations for Projects */
 
@@ -243,10 +272,11 @@ background-image: url("https://www.transparenttextures.com/patterns/black-linen.
 
 .tech-list {
   display: block;
-  width: 100%;
+  line-height: .5em;
   list-style: none;
-  margin: 0;
+  margin: 0 0 0 30px;
   padding: 0;
+  box-sizing: border-box;
 }
 .tech-list:before,
 .tech-list:after {
@@ -259,11 +289,8 @@ background-image: url("https://www.transparenttextures.com/patterns/black-linen.
 .tech-list li {
   display: inline-block;
   margin: 0;
-  padding: .25em .3em .25em;
-  background-color: #FFC107;
   color: #000000;
   font-size: .5em;
-  border-radius: 6px;
   font-family: monospace;
 }
 .tech-list li:before{
@@ -279,12 +306,20 @@ background-image: url("https://www.transparenttextures.com/patterns/black-linen.
 
 
 
+.info {
+  clear: both;
+  width: 100%;
+  height: 0;
+  transition: height 1s ;
+  -webkit-transition: height 1s;
 
+}
 
-
-
-
-
+.show-info {
+  height: 300px;
+  transition: height 1s ;
+  -webkit-transition: height 1s;
+}
 
 
 
