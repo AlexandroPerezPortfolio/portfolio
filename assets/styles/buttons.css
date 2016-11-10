@@ -83,3 +83,15 @@ a:link, a:visited, a:hover, a:active {
 .btn-card:hover {
   background-color: #d0d0d0;
 }
+
+.btn-contact {
+  display: block;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  background-color: #e6e6e6;
+}
+.btn-contact:hover {
+  background-color: #ec8013;
+}
