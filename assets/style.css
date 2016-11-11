@@ -154,9 +154,12 @@ background-image: url("https://www.transparenttextures.com/patterns/black-linen.
 .skills li {
 	display: inline-block;
 	text-align: center;
-	/*box-shadow: 10px 10px 5px #999;*/
-	/*border-radius: 25px;*/
-	margin: 1%;
+	border-radius: 15px;
+	margin: 5px;
+  background-color: white;
+  padding: 25px 15px 15px 15px;
+  width: 140px;
+  box-sizing: border-box;
 }
 
 
@@ -171,6 +174,22 @@ background-image: url("https://www.transparenttextures.com/patterns/black-linen.
 	padding: 10px;
 }
 
+.percentage {
+  display: block;
+  width: 100%;
+  background-color: #b9b9b9;
+  border-radius: 12px;
+  font-size: 14px;
+  text-align: left;
+}
+.percentage > span {
+  padding-left: 14px;
+  box-sizing: border-box;
+  display: block;
+  background-color: #0b4d0b;
+  color: white;
+  border-radius: inherit;
+}
 
 
 

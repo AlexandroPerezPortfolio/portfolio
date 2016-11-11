@@ -33,6 +33,9 @@
     height: 150px;
     background-image: url("photo_small.jpg");
   }
+  .section {
+    padding: 1em 10px 2em;
+  }
 
   .skills li img {
     display: block;
