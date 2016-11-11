@@ -33,26 +33,49 @@ Web layouts
   float:left;
   margin: 0 0 1.6% 1.6%;
 }
-/*  GRID OF FOUR   ================= */
+
+
+/*  GRID OF FOUR   =============================================== */
 .grid_of_4 > .cell {
   width: 23.8%;
 }
-@media only screen and (min-width: 1367px) {
+/*@media only screen and (min-width: 1281px) {
   .grid_of_4 > .col:nth-child(4n+1) { margin-left: 0; clear: left;}
-}
-/*  GRID OF FOUR CHANGES TO GRID OF THREE AT LESS THAN 1024px */
-@media only screen and (min-width: 1025px) and (max-width: 1366px)  {
+}*/
+/*  GRID OF FOUR CHANGES TO GRID OF THREE AT MORE THAN 1280px */
+@media only screen and (min-width: 1280px) {
   .grid_of_4 > .cell { width: 32.26%;}
   .grid_of_4 > .col:nth-child(3n+1) { margin-left: 0; clear: left;}
 }
-/*  GRID OF FOUR CHANGES TO GRID OF TWO AT 480 PIXELS OR LESS */
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+/*  GRID OF FOUR CHANGES TO GRID OF TWO BETWEEN 601 AND 1279 PIXELS */
+@media only screen and (min-width: 880px) and (max-width: 1279px) {
+  .portfolio-grid {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
   .grid_of_4 > .col:nth-child(2n+1) { margin-left: 0; clear: left; }
   .grid_of_4 > .cell { width: 49.2%; }
 }
-
-/*  GRID OF FOUR CHANGES TO GRID OF TWO AT 480 PIXELS OR LESS */
-@media only screen and (max-width: 480px) {
+/*  GRID OF FOUR CHANGES TO GRID OF ONE AT 480 PIXELS OR LESS */
+@media only screen and (max-width: 879px) {
+  .portfolio-grid {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
   .grid_of_4 > .col { margin-left: 0; margin-bottom: 1em; clear: left; }
   .grid_of_4 > .cell { width: 100%; }
+}
+/* =================================================================== */
+
+
+/* GRID OF TWO ======================================================= */
+.grid_of_2 > .cell { width: 49.2%; }
+@media only screen and (min-width: 801px) {
+  .grid_of_2 > .col:nth-child(2n+1) { margin-left: 0; clear: left}
+}
+@media only screen and (max-width: 800px) {
+  .grid_of_2 > .col { margin-left: 0; clear: left; }
+  .grid_of_2 > .cell { width: 100%; }
 }
