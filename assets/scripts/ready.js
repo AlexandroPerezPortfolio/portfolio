@@ -3,6 +3,7 @@ $(document).ready(function () {
   setMobileNavigation();
   enableProjectDescAnimations();
   setTypedAnimations();
+  setSkillPercentage();
 
   $('a[href$="#"]').click(function() {
     console.log("Empty anchor link stopped.");
