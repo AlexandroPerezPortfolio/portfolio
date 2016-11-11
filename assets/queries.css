@@ -53,7 +53,6 @@
 @media only screen and (orientation: portrait){
 
   header {
-    /*background-image: url('landing-page-cover-landscape-medium.jpg');*/
     background-position: left center;
   }
   header > div {
